@@ -6,7 +6,7 @@ export function register() {
   addons.register('kadirahq/storybook-addon-hello', api => {
     addons.addPanel('kadirahq/storybook-addon-hello', {
       title: 'Hello World',
-      render: _ => <HelloWorld />
+      render: () => <HelloWorld />
     });
   });
 }

@@ -34,7 +34,7 @@ var HelloWorld = function (_Component) {
   _createClass(HelloWorld, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_HelloWorld2.default, { text: 'Hello World' });
+      return _react2.default.createElement(_HelloWorld2.default, { text: 'Hello World!' });
     }
   }]);
 

@@ -23,7 +23,7 @@ function register() {
   _storybookAddons2.default.register('kadirahq/storybook-addon-hello', function (api) {
     _storybookAddons2.default.addPanel('kadirahq/storybook-addon-hello', {
       title: 'Hello World',
-      render: function render(_) {
+      render: function render() {
         return _react2.default.createElement(_HelloWorld2.default, null);
       }
     });
