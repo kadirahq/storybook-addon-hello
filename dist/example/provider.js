@@ -54,7 +54,7 @@ var ExampleProvider = function (_Provider) {
   }, {
     key: 'renderPreview',
     value: function renderPreview(kind, story) {
-      return _react2.default.createElement(_preview2.default, null);
+      return _react2.default.createElement(_preview2.default, { channel: this.channel });
     }
   }, {
     key: 'handleAPI',

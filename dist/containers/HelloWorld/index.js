@@ -14,6 +14,8 @@ var _HelloWorld = require('../../components/HelloWorld/');
 
 var _HelloWorld2 = _interopRequireDefault(_HelloWorld);
 
+var _ = require('../../');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25,16 +27,39 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var HelloWorld = function (_Component) {
   _inherits(HelloWorld, _Component);
 
-  function HelloWorld() {
+  function HelloWorld(props) {
+    var _Object$getPrototypeO;
+
     _classCallCheck(this, HelloWorld);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(HelloWorld).apply(this, arguments));
+    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(HelloWorld)).call.apply(_Object$getPrototypeO, [this, props].concat(args)));
+
+    _this.state = { text: '' };
+    _this._listener = function (d) {
+      return _this.setState({ text: d.text });
+    };
+    return _this;
   }
 
   _createClass(HelloWorld, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.props.channel.on(_.HELLO_MESSAGE_ID, this._listener);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      this.props.channel.removeListener(_.HELLO_MESSAGE_ID, this._listener);
+    }
+  }, {
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_HelloWorld2.default, { text: 'Hello World!' });
+      var text = this.state.text;
+      return _react2.default.createElement(_HelloWorld2.default, { text: text });
     }
   }]);
 

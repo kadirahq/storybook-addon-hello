@@ -22,7 +22,7 @@ export default class ExampleProvider extends Provider {
   }
 
   renderPreview(kind, story) {
-    return <Preview />;
+    return <Preview channel={this.channel} />;
   }
 
   handleAPI(api) {
