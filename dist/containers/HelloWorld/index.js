@@ -48,12 +48,12 @@ var HelloWorld = function (_Component) {
   _createClass(HelloWorld, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      this.props.channel.on(_.HELLO_MESSAGE_ID, this._listener);
+      this.props.channel.on(_.EVENT_ID, this._listener);
     }
   }, {
     key: 'componentWillUnmount',
     value: function componentWillUnmount() {
-      this.props.channel.removeListener(_.HELLO_MESSAGE_ID, this._listener);
+      this.props.channel.removeListener(_.EVENT_ID, this._listener);
     }
   }, {
     key: 'render',
