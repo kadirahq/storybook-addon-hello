@@ -4,8 +4,8 @@ import { sayHello } from '../src';
 
 storiesOf('Button', module)
   .add('Hello World', () => (
-    <button onClick={sayHello('World')}>Say "Hello World"</button>
+    <button onClick={sayHello('Hello World')}>Say "Hello World"</button>
   ))
   .add('Hello Earth', () => (
-    <button onClick={sayHello('Earth')}>Say "Hello Earth"</button>
+    <button onClick={sayHello('Hello Earth')}>Say "Hello Earth"</button>
   ));

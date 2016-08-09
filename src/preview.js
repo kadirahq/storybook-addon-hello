@@ -8,6 +8,6 @@ export function sayHello(text) {
     // get `channel` from the addon API
     const channel = addons.getChannel();
     // send the message using the channel
-    channel.emit(EVENT_ID, {text: `Hello ${text}`});
+    channel.emit(EVENT_ID, {text});
   };
 }
