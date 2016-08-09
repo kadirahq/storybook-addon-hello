@@ -1,6 +1,6 @@
 {
   "name": "@kadira/storybook-addon-hello",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Hello World addon for storybook",
   "main": "dist/index.js",
   "scripts": {
