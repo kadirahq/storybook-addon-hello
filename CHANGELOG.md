@@ -1,5 +1,9 @@
 ## Changelog
 
+### v1.0.3
+
+* Refactor source files
+
 ### v1.0.2
 
 * Add comments on `src/index.js`
