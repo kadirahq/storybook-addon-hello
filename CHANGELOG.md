@@ -1,5 +1,10 @@
 ## Changelog
 
+### v1.0.4
+
+* Remove the "Hello" prefix
+* Add comments and update README
+
 ### v1.0.3
 
 * Refactor source files
