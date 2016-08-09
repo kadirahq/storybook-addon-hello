@@ -24,4 +24,4 @@ Object.defineProperty(exports, 'sayHello', {
 // addons, panels and events get unique names using a prefix
 var ADDON_ID = exports.ADDON_ID = 'kadirahq/storybook-addon-hello';
 var PANEL_ID = exports.PANEL_ID = ADDON_ID + '/hello-panel';
-var EVENT_ID = exports.EVENT_ID = ADDON_ID + '/hello-message';
+var EVENT_ID = exports.EVENT_ID = ADDON_ID + '/hello-event';
