@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import HelloWorldComponent from '../../components/HelloWorld/';
-import { HELLO_MESSAGE_ID } from '../../';
+import { EVENT_ID } from '../../';
 
 export default class HelloWorld extends Component {
   constructor(props, ...args) {
@@ -10,11 +10,11 @@ export default class HelloWorld extends Component {
   }
 
   componentDidMount() {
-    this.props.channel.on(HELLO_MESSAGE_ID, this._listener);
+    this.props.channel.on(EVENT_ID, this._listener);
   }
 
   componentWillUnmount() {
-    this.props.channel.removeListener(HELLO_MESSAGE_ID, this._listener);
+    this.props.channel.removeListener(EVENT_ID, this._listener);
   }
 
   render() {
