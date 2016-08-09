@@ -1,5 +1,10 @@
 ## Changelog
 
+### v1.0.2
+
+* Add comments on `src/index.js`
+* Use react-storybook for examples
+
 ### v1.0.1
 
 * Tweak panel text style
