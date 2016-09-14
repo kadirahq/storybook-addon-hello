@@ -21,15 +21,15 @@ Add this line to your `addons.js` file (create this file inside your storybook c
 import '@kadira/storybook-addon-hello/register';
 ```
 
-Import the `sayHello` function and use it to create actions handlers. When creating action handlers, provide a string which should be visible on the panel.
+Import the `hello` function and use it to create actions handlers. When creating action handlers, provide a string which should be visible on the panel.
 
 ```js
 import { storiesOf } from '@kadira/storybook'
-import { sayHello } from '@kadira/storybook-addon-hello'
+import { hello } from '@kadira/storybook-addon-hello'
 
 storiesOf('Button', module)
   .add('default view', () => (
-    <Button onClick={ sayHello('Hello World') }>
+    <Button onClick={ hello('Hello World') }>
       Hello World!
     </Button>
   ))
