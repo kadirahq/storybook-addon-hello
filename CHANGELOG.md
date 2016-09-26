@@ -1,5 +1,11 @@
 ## Changelog
 
+### v1.0.5
+26-Sep-2016
+
+* Use `react-app` preset
+* Remove unused dependencies
+
 ### v1.0.4
 
 * Remove the "Hello" prefix
