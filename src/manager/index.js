@@ -10,7 +10,9 @@ export function init() {
     // add 'Hello World' panel
     addons.addPanel(PANEL_ID, {
       title: 'Hello World',
-      render: () => <HelloWorld />
+      render() {
+        return <HelloWorld />;
+      }
     });
   });
 }
