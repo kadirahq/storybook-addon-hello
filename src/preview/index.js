@@ -4,8 +4,7 @@ import { EVENT_ID } from '../shared';
 // init function will be executed once when the storybook loads for the
 // first time. This is a good place to add global listeners on channel.
 export function init() {
-  const channel = addons.getChannel();
-  // TODO handle story change events
+  // NOTE not implemented
 }
 
 // hello function will return a function which will set the text inside
