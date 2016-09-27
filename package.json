@@ -6,7 +6,7 @@
   "scripts": {
     "prepublish": "node .scripts/npm-prepublish.js",
     "storybook": "start-storybook -p 9001",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage --watch"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,13 @@
   "devDependencies": {
     "@kadira/storybook": "^2.13.1",
     "babel-cli": "^6.14.0",
+    "babel-jest": "^15.0.0",
+    "babel-polyfill": "^6.13.0",
     "babel-preset-react-app": "^0.2.1",
+    "jest": "^15.1.1",
     "react": "^15.3.1",
-    "react-dom": "^15.3.1",
+    "react-addons-test-utils": "^15.3.2",
+    "react-dom": "^15.3.2",
     "shelljs": "^0.7.4"
   },
   "peerDependencies": {
