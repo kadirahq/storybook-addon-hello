@@ -24,7 +24,6 @@
     "@kadira/storybook": "^2.20.1",
     "babel-cli": "^6.14.0",
     "babel-jest": "^15.0.0",
-    "babel-polyfill": "^6.13.0",
     "babel-preset-react-app": "^0.2.1",
     "jest": "^15.1.1",
     "react": "^15.3.1",
