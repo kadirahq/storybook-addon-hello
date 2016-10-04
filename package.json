@@ -4,7 +4,7 @@
   "description": "Hello World addon for storybook",
   "main": "preview.js",
   "scripts": {
-    "prepublish": "node .scripts/npm-prepublish.js",
+    "prepublish": "BABEL_ENV=production node .scripts/npm-prepublish.js",
     "storybook": "start-storybook -p 9001",
     "test": "jest --coverage --watch"
   },
